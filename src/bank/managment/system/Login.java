@@ -86,6 +86,11 @@ public class Login extends JFrame implements ActionListener{
         if(ae.getSource()==clear){
             cardTextField.setText("");
             pinTextField.setText("");
+        }else if(ae.getSource()==login){
+            
+        }else if (ae.getSource()==signup){
+            setVisible(false);
+            new SignUpOne().setVisible(true);
         }
        }
 }
