@@ -5,7 +5,7 @@ import javax.swing.*;
 import java.awt.event.*;
 
 public class SignUpTwo extends JFrame implements ActionListener{
-  long random;  
+  
   JTextField pan,aadhar;
   JComboBox religion,category,occupation,education,income;
   JButton next;
@@ -16,7 +16,7 @@ public class SignUpTwo extends JFrame implements ActionListener{
         setLayout(null);
         setTitle("NEW ACCOUNT APPLICATION FORM-PAGE-2");
         
-        JLabel additionalDetails=new JLabel("Page:1 Additional Details");
+        JLabel additionalDetails=new JLabel("Page:2 Additional Details");
         additionalDetails.setFont(new Font("Raleway",Font.BOLD,22));
         additionalDetails.setBounds(290,80,400,30);
         add(additionalDetails);
@@ -112,14 +112,14 @@ public class SignUpTwo extends JFrame implements ActionListener{
         add(state);
         
         syes=new JRadioButton("Yes");
-        syes.setBounds(450,390,100,30);
+        syes.setBounds(300,540,100,30);
         syes.setFont(new Font("Arial",Font.BOLD,14));
         syes.setBackground(Color.WHITE);
 
         add(syes);
         
         sno=new JRadioButton("No");
-        sno.setBounds(450,390,100,30);
+        sno.setBounds(450,540,100,30);
         sno.setFont(new Font("Arial",Font.BOLD,14));
         sno.setBackground(Color.WHITE);
 
@@ -135,14 +135,14 @@ public class SignUpTwo extends JFrame implements ActionListener{
         add(pincode);
         
         eyes=new JRadioButton("Yes");
-        eyes.setBounds(450,390,100,30);
+        eyes.setBounds(300,590,100,30);
         eyes.setFont(new Font("Arial",Font.BOLD,14));
         eyes.setBackground(Color.WHITE);
 
         add(eyes);
         
         eno=new JRadioButton("No");
-        eno.setBounds(450,390,100,30);
+        eno.setBounds(450,590,100,30);
         eno.setFont(new Font("Arial",Font.BOLD,14));
         eno.setBackground(Color.WHITE);
 
@@ -171,7 +171,7 @@ public class SignUpTwo extends JFrame implements ActionListener{
         
     }
      public void actionPerformed (ActionEvent ae){
-          String formno= ""+random;
+          String formno= "";
           String sreligion = (String)religion.getSelectedItem();
           String scategory = (String)category.getSelectedItem();
           String sincome = (String)income.getSelectedItem();
